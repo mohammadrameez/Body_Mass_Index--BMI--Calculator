@@ -1,0 +1,257 @@
+:root {
+  --underweight: orange;
+  --normal: rgb(28, 153, 28);
+  --overweight: rgb(57, 93, 212);
+  --obese: crimson;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #47d89c;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  width: 90%;
+  max-width: 420px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.541);
+  display: grid;
+  gap: 1rem;
+  /* height: 720px; */
+  height: 79vh;
+}
+
+.box {
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(151, 143, 143, 0.5);
+
+}
+
+.calculator {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 30px;
+}
+
+.calculator div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculator label {
+  flex: 0 1 120px;
+  font-weight: 600;
+}
+
+.calculator input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #555;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.calculator button {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: #00a1a3;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calculator button[type="reset"] {
+  background: #444;
+}
+
+.calculator button:hover {
+  filter: brightness(120%);
+}
+
+.output {
+  text-align: center;
+  padding-bottom: 9px;
+}
+
+.output #bmi {
+  font-size: 4rem;
+}
+
+.output #desc strong {
+  text-transform: uppercase;
+}
+
+.bmi-scale {
+  display: flex;
+  padding: 5px;
+  height: 5px;
+  padding-bottom: 40px;
+}
+
+.bmi-scale div {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color);
+  padding: 10px;
+}
+
+.bmi-scale h4 {
+  font-size: 0.75rem;
+  color: slategray;
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
+
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.178);
+  border-radius: 12px;
+  padding: 15px 0;
+  /* padding-inline: 20px; */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  /* box-shadow: #000; */
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00000069;
+  margin-bottom: 30px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #5d77c0;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.342) border-radius: 12px;
+  padding: 15px 0px;
+  margin-bottom: 30px;
+}
+
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+}
+
+.gender .container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.gender .container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.gender .container input:checked~.checkmark:after {
+  display: block;
+}
+
+
+.gender .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+footer {
+  color: #00000096;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 30px;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  text-align: left;
+}
