@@ -7,7 +7,7 @@ In this project, I have developed a BMI calculator using HTML, CSS, and JavaScri
 # Key Features:
 
 - Input your height in Centimeter (cm) and your weight in kilogram (kg).
-- It calculates BMI using the standard formula: BMI = weight (kg) / (height (m) * height (m)).
+- It calculates BMI using the standard formula: BMI = weight (kg) / (height (cm) * height (cm)).
 - Provides an instant BMI result and offers insights into your health and fitness.
 - This project serves as an educational tool and a practical resource for anyone interested in monitoring their health and making informed decisions about their fitness goals. Feel free to explore the code, use it for reference, or contribute to its development. Your feedback and contributions are highly appreciated!
 
