@@ -3,7 +3,7 @@ In this project, I have developed a BMI calculator using HTML, CSS, and JavaScri
 
 ![DP-1](https://github.com/mohammadrameez/Body_Mass_Index--BMI--Calculator/assets/144389509/0d2f411c-d124-4c2c-a1d2-dfeb44e2a6d1)
 
-
+ 
 # Key Features:
 
 - Input your height in Centimeter (cm) and your weight in kilogram (kg).
