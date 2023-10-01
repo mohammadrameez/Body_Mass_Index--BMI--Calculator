@@ -18,4 +18,5 @@ The BMI value is interpreted into the following categories:
 - Healthy: 18.5 ≤ BMI < 24.9
 - Overweight: 24.9 ≤ BMI < 29.9
 - Obese: BMI ≥ 30
+
   
